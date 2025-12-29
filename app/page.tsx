@@ -64,9 +64,31 @@ export default function Home() {
           }}>
             <h2 style={{ color: '#5d4037', margin: '0 0 10px 0' }}>{book.volumeInfo.title}</h2>
             <p style={{ color: '#8d6e63', fontSize: '0.9rem' }}>{book.volumeInfo.authors?.join(', ')}</p>
-            <p style={{ color: '#4e342e', lineHeight: '1.6' }}>
+            <p style={{ color: '#4e342e', lineHeight: '1.6', marginBottom: '15px' }}>
               {book.volumeInfo.description ? book.volumeInfo.description.substring(0, 150) + '...' : 'No description available.'}
             </p>
+            
+            {/* Google Booksへのリンクボタンを追加 */}
+            {book.volumeInfo.infoLink && (
+              <a 
+                href={book.volumeInfo.infoLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  padding: '8px 16px',
+                  backgroundColor: '#8b4513',
+                  color: 'white',
+                  textDecoration: 'none',
+                  borderRadius: '8px',
+                  fontSize: '0.85rem',
+                  fontWeight: 'bold',
+                  transition: 'background 0.3s'
+                }}
+              >
+                View on Google Books →
+              </a>
+            )}
           </div>
         ))}
       </div>
