@@ -1,76 +1,45 @@
-export default function Privacy() {
+'use client';
+
+import React from 'react';
+
+export default function PrivacyPolicy() {
   return (
-    <div style={{ padding: '60px 20px', maxWidth: '800px', margin: '0 auto', lineHeight: '1.9', color: '#4e342e', backgroundColor: '#fffcf0', minHeight: '100vh' }}>
-      
-      {/* 日本語セクション */}
-      <h1 style={{ color: '#8b4513', borderBottom: '2px solid #eaddca', paddingBottom: '10px' }}>プライバシーポリシー</h1>
-      
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>1. 運営者情報</h2>
-        <p>
-          運営者：Book Guide App Mark II 運営事務局<br />
-          連絡先：<span style={{ fontWeight: 'bold', color: '#d2691e' }}>standforem@gmail.com</span>
-        </p>
+    <main style={{ padding: '40px 20px', maxWidth: '800px', margin: '0 auto', color: '#443322', lineHeight: '1.8' }}>
+      <h1 style={{ color: '#8b4513', borderBottom: '2px solid #eaddca', paddingBottom: '10px' }}>Privacy Policy</h1>
+      <p style={{ fontSize: '0.9rem', color: '#8d6e63' }}>Last Updated: December 29, 2025</p>
+
+      <section style={sectionStyle}>
+        <h2 style={headingStyle}>1. Introduction</h2>
+        <p>Welcome to Smart Book Guide. We value your privacy and are committed to protecting your personal data. This policy explains how we use cookies and manage your information.</p>
       </section>
 
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>2. 広告の配信について</h2>
-        <p>
-          当サイトでは、第三者配信の広告サービス「Googleアドセンス」を利用しています。
-          広告配信事業者は、ユーザーの興味に応じた商品やサービスの広告を表示するため、当サイトや他サイトへのアクセスに関する情報 「Cookie」(氏名、住所、メール アドレス、電話番号は含まれません) を使用することがあります。
-        </p>
+      <section style={sectionStyle}>
+        <h2 style={headingStyle}>2. Cookie Policy</h2>
+        <p>We use cookies to improve your browsing experience. You can manage your preferences through our Cookie Preference Center.</p>
+        <ul style={{ paddingLeft: '20px' }}>
+          <li><strong>Essential Cookies:</strong> Required for the website to function properly. These cannot be disabled.</li>
+          <li><strong>Analytics Cookies (Google Analytics):</strong> Used to understand how visitors interact with our website, helping us improve our service.</li>
+          <li><strong>Advertising Cookies (Google AdSense):</strong> Used to serve personalized advertisements based on your interests and previous browsing history.</li>
+        </ul>
       </section>
 
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>3. アクセス解析について</h2>
-        <p>当サイトではGoogleアナリティクスを使用しています。データは匿名で収集されており、個人を特定するものではありません。</p>
+      <section style={sectionStyle}>
+        <h2 style={headingStyle}>3. Google AdSense & Analytics</h2>
+        <p>This site uses Google services. Google may use cookies to serve ads based on a user's prior visits to your website or other websites. You may opt-out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" style={linkStyle}>Google Ads Settings</a>.</p>
       </section>
 
-      <section style={{ marginTop: '30px', paddingBottom: '40px', borderBottom: '1px dashed #eaddca' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>4. 免責事項</h2>
-        <p>当サイトの掲載内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。</p>
+      <section style={sectionStyle}>
+        <h2 style={headingStyle}>4. Data Protection</h2>
+        <p>We do not sell or share your personal information with third parties, except as required to provide our services through Google's APIs and advertising platforms.</p>
       </section>
 
-      {/* English Section */}
-      <h1 style={{ color: '#8b4513', marginTop: '60px', borderBottom: '2px solid #eaddca', paddingBottom: '10px' }}>Privacy Policy</h1>
-      
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>1. Operator Information</h2>
-        <p>
-          Operator: Book Guide App Mark II Administration<br />
-          Contact: <span style={{ fontWeight: 'bold', color: '#d2691e' }}>standforem@gmail.com</span>
-        </p>
-      </section>
-
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>2. Advertising</h2>
-        <p>
-          This website uses "Google AdSense," a third-party advertising service. 
-          Ad providers may use "Cookies" (not including your name, address, email address, or telephone number) regarding your visits to this and other websites to provide advertisements about goods and services of interest to you.
-        </p>
-      </section>
-
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>3. Data Analytics</h2>
-        <p>
-          This website uses Google Analytics to analyze traffic. 
-          This data is collected anonymously and does not identify any individual user.
-        </p>
-      </section>
-
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.3rem', color: '#8b4513' }}>4. Disclaimer</h2>
-        <p>
-          We are not responsible for any damages or losses caused by the content on this website. 
-          While we strive to provide accurate information, we do not guarantee its completeness or accuracy.
-        </p>
-      </section>
-
-      <div style={{ marginTop: '60px', textAlign: 'center' }}>
-        <a href="/" style={{ color: '#d2691e', fontWeight: 'bold', textDecoration: 'none', border: '1px solid #d2691e', padding: '10px 20px', borderRadius: '8px' }}>
-          ← Back to Top / トップページへ戻る
-        </a>
+      <div style={{ marginTop: '40px', textAlign: 'center' }}>
+        <a href="/" style={{ color: '#d2691e', fontWeight: 'bold', textDecoration: 'none' }}>← Back to Home</a>
       </div>
-    </div>
+    </main>
   );
 }
+
+const sectionStyle = { marginBottom: '30px' };
+const headingStyle = { color: '#8b4513', fontSize: '1.4rem', marginBottom: '10px' };
+const linkStyle = { color: '#d2691e', textDecoration: 'underline' };
