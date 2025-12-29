@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', minHeight: '100vh' }}>
       <h1 style={{ textAlign: 'center', color: '#8b4513', fontSize: '2rem', marginBottom: '30px' }}>
-        📖 AI Book Guide
+        📖 Smart Book Guide
       </h1>
 
       <form onSubmit={searchBooks} style={{ display: 'flex', gap: '10px', margin: '40px 0' }}>

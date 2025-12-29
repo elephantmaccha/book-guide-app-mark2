@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AIおすすめブックガイド",
-  description: "あなたにぴったりの本をAIが紹介します",
+  title: "Smart Book Guide",
+  description: "Discover your next favorite book with ease.",
 };
 
 export default function RootLayout({
@@ -40,7 +40,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google AdSense 審査用コード */}
+        {/* Google AdSense */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7494885883545664"
